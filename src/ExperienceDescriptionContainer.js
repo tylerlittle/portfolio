@@ -7,7 +7,7 @@ export default function ExperienceDescriptionContainer(props) {
         descriptionArray.push(<ExperienceDescription key={i} description={props.description[i]} color={props.color} />);
     }
     return (
-        <div>
+        <div style={{ display: "inline-block", width: "75%" }}>
             {descriptionArray}
             <br />
         </div>

@@ -11,7 +11,7 @@ export default function Experience() {
     let experiences = [];
     for (var i=0; i < experienceList.length; i++) {
         experiences.push(
-            <div key={experienceList[i].title}>
+            <div key={experienceList[i].title} style={{ paddingBottom: "3em" }}>
                 <ExperienceTitle title={experienceList[i].title} color={color} />
                 <ExperienceDuration duration={experienceList[i].duration} color={color} />
                 <ExperienceDescriptionContainer description={experienceList[i].description} color={color} />
