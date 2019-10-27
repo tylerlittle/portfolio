@@ -6,20 +6,20 @@ import ProjectTitle from './ProjectTitle';
 import ProjectDescription from './ProjectDescription';
 
 export default function Projects() {
-
+    const color="#f2f2f2";
     let projects = [];
     for (var i=0; i < projectList.length; i++) {
         projects.push(
-            <div key={i}>
-                <ProjectTitle title={projectList[i].title} />
-                <ProjectDescription description={projectList[i].description} />
+            <div key={projectList[i].title}>
+                <ProjectTitle title={projectList[i].title} color={color} />
+                <ProjectDescription description={projectList[i].description} color={color} />
             </div>
         )
     }
 
     return (
         <div className="projectsContainer">
-            <Header title="Projects" />
+            <Header title="Projects" color={color} />
             {projects}
         </div>
     )

@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ExperienceDuration extends Component {
-    render() {
-        return (
-            <h3 style={{ color: '#f2f2f2'}}>
-                {this.props.duration}
-            </h3>
-        )
-    }
+export default function ExperienceDuration(props) {
+    return (
+        <h3 style={{ color: props.color }}>
+            {props.duration}
+        </h3>
+    )
 }
-
-export default ExperienceDuration;

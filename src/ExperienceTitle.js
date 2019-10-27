@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ExperienceTitle extends Component {
-    render() {
-        return (
-            <h2>
-                {this.props.title}
-            </h2>
-        )
-    }
+export default function ExperienceTitle(props) {
+    return (
+        <h2 style={{ color: props.color }}>
+            {props.title}
+        </h2>
+    )
 }
-
-export default ExperienceTitle;

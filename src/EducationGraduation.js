@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class EducationGraduation extends Component {
-    render() {
-        return (
-            <h4>
-                {this.props.graduation}
-            </h4>
-        )
-    }
+export default function EducationGraduation(props) {
+    return (
+        <h4 style={{ color: props.color }}>
+            {props.graduation}
+        </h4>
+    )
 }
-
-export default EducationGraduation;

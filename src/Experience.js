@@ -7,21 +7,21 @@ import experienceList from './experienceList';
 import Header from './Header';
 
 export default function Experience() {
-
+    const color="#f2f2f2";
     let experiences = [];
     for (var i=0; i < experienceList.length; i++) {
         experiences.push(
-            <div key={i}>
-                <ExperienceTitle title={experienceList[i].title} />
-                <ExperienceDuration duration={experienceList[i].duration} />
-                <ExperienceDescriptionContainer description={experienceList[i].description} />
+            <div key={experienceList[i].title}>
+                <ExperienceTitle title={experienceList[i].title} color={color} />
+                <ExperienceDuration duration={experienceList[i].duration} color={color} />
+                <ExperienceDescriptionContainer description={experienceList[i].description} color={color} />
             </div>
         )
     }
 
     return (
         <div className="experienceContainer">
-            <Header title="Experience" />
+            <Header title="Experience" color={color} />
             {experiences}
         </div>
     )

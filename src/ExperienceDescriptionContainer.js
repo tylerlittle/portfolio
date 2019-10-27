@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ExperienceDescription from './ExperienceDescription';
 
-class ExperienceDescriptionContainer extends Component {
-    render() {
-        let descriptionArray = [];
-        for (var i = 0; i < this.props.description.length; i++) {
-            descriptionArray.push(<ExperienceDescription key={i} description={this.props.description[i]} />);
-        }
-        return (
-            <div>
-                {descriptionArray}
-                <br />
-            </div>
-        )
+export default function ExperienceDescriptionContainer(props) {
+    let descriptionArray = [];
+    for (var i = 0; i < props.description.length; i++) {
+        descriptionArray.push(<ExperienceDescription key={i} description={props.description[i]} color={props.color} />);
     }
+    return (
+        <div>
+            {descriptionArray}
+            <br />
+        </div>
+    )
 }
-
-export default ExperienceDescriptionContainer;
