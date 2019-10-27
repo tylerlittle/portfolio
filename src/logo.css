@@ -1,0 +1,73 @@
+.mytransform {
+	animation-iteration-count: infinite;
+	animation-name: spin;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(180deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+.hexagon_loader {
+    fill: none;
+    stroke: #2b6eff;
+    stroke-width: 4px;
+    stroke-dasharray: 1332.42px;
+    stroke-dashoffset: 1332.42px;
+    animation: move 1.5s linear forwards;
+}
+
+.letterTfirst_loader {
+	fill: none;
+    stroke: #2b6eff;
+    stroke-width: 4px;
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: move .25s linear forwards;
+	animation-delay: 1.5s;
+}
+
+.letterTsecond_loader {
+	fill: none;
+    stroke: #2b6eff;
+    stroke-width: 4px;
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: move .25s linear forwards;
+	animation-delay: 1.75s;
+}
+
+.letterLfirst_loader {
+	fill: none;
+    stroke: #2b6eff;
+    stroke-width: 4px;
+    stroke-dasharray: 175.56px;
+    stroke-dashoffset: 175.56px;
+    animation: move .25s linear forwards;
+	animation-delay: 2s;
+}
+
+.letterLsecond_loader {
+	fill: none;
+  stroke: #2b6eff;
+  stroke-width: 4px;
+  stroke-dasharray: 175.56px;
+  stroke-dashoffset: 175.56px;
+  animation: move .25s linear forwards;
+	animation-delay: 2.25s;
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.projectsContainer {
+    background-color: #2b6eff;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.projectsContainer h1 {
+    color: #f2f2f2;
+}
