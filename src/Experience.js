@@ -5,6 +5,7 @@ import ExperienceDescriptionContainer from './ExperienceDescriptionContainer';
 import './experience.css';
 import experienceList from './experienceList';
 import Header from './Header';
+import ExperienceTools from './ExperienceTools';
 
 export default function Experience() {
     const color="#f2f2f2";
@@ -15,6 +16,7 @@ export default function Experience() {
                 <ExperienceTitle title={experienceList[i].title} color={color} />
                 <ExperienceDuration duration={experienceList[i].duration} color={color} />
                 <ExperienceDescriptionContainer description={experienceList[i].description} color={color} />
+                <ExperienceTools tools={experienceList[i].tools} color={color} />
             </div>
         )
     }

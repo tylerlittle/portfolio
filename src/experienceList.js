@@ -7,7 +7,8 @@ const experienceList = [
             "Customize solutions based on customer requirements and feedback",
             "Make front-end changes as well as back-end changes to database structures to suit customer needs",
             "Selected to work on and maintain secondary project to help validate data before production use"
-        ]
+        ],
+        tools: "C#, VB.Net, ASP.NET Core, HTML5, JS, CSS, T-SQL, MS SQL Server, Dojo Toolkit"
     },
     {
         title: "Tools Development Engineer Co-op",
@@ -18,7 +19,8 @@ const experienceList = [
             "Design Nintex workflows on MS SharePoint to automate business processes",
             "Contribute to the development of a Java Web Application utilizing Spring Framework",
             "Test Java Web Application documenting any bugs found"
-        ]
+        ],
+        tools: "Java, HTML5, JS, CSS, MS SQL Server, MS SharePoint, Nintex Workflows, MS InfoPath"
     }
 ];
 
