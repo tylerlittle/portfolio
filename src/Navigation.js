@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 export default function Navigation() {
     return (
         <AppBar>
-            <Tabs centered value={false}>
+            <Tabs variant="scrollable" centered value={false}>
                 <Link to="experience" smooth={true}>
                     <Tab label='Experience' />
                 </Link>
