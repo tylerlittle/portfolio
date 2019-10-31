@@ -9,7 +9,7 @@ import ProjectWebsite from './ProjectWebsite';
 import ProjectSource from './ProjectSource';
 
 export default function Projects() {
-    const color="#f2f2f2";
+    const color="#000";
     let projects = [];
     for (var i=0; i < projectList.length; i++) {
         projects.push(
