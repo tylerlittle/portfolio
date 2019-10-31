@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
 import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
@@ -16,7 +15,6 @@ class App extends Component {
   render() {
     return (
       <Grid container direction='column' alignItems='center'>
-        <Navigation />
         <Grid item xs={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
           <Logo />
         </Grid>
